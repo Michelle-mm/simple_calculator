@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: rgb(52, 53, 71);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px whitesmoke;
+    margin: auto;
+    padding: 1rem;
+    position: relative;
+    width: 65%;
+    height: 95svh;
+    display: flex; 
+    flex-direction: column;
+}
+.btnContainer{
+    flex-grow: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: rgb(52, 53, 71);
+    color: whitesmoke;
+    font-size: 2rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 
+    -3px -3px 5px whitesmoke, /* Top-left shadow */
+    3px 3px 5px black;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.leftBtns{
+    flex-grow: 1.9;
+    height: 100%;
+}
+.rightBtns{
+    flex-grow: 1.1;
+    height: 100%;
+}
+.others{
+    height: 20%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.number{
+    border: none;
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.operator{
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    color: yellowgreen;
+}
+
+button.op, 
+button.percentage, 
+button.other{
+    color: yellowgreen;
+}
+
+
+.result{
+    color: whitesmoke;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgba(211, 211, 211, 0.432);
+    font-size: 4rem;
+    align-self: center;
+    margin: 1rem;
+    padding-right: 1rem;
+    text-align: end;
+}
+
+
+
